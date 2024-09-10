@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA1 Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+
+        header {
+            background-color: #0277bd; /* Dark blue header */
+            color: #e1f5fe; /* Light text color */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0288d1; /* Medium blue navigation bar */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #01579b; /* Darker blue on hover */
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #01579b; /* Darkest blue for the main text */
+        }
+
+        h2 {
+            color: #01579b; /* Darkest blue for section titles */
+        }
+
+        p {
+            color: #004d73; /* Slightly lighter blue for paragraph text */
+        }
+
+        .our-work {
+            margin-top: 2rem;
+            padding: 20px;
+            background-color: #b3e5fc; /* Light blue background for the work section */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .homework-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .homework-list li {
+            padding: 10px;
+            background-color: #81d4fa; /* Lighter blue for homework items */
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .homework-list li a {
+            color: #01579b; /* Darkest blue for homework links */
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0277bd; /* Dark blue footer */
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DATA1 Group</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#our-work">Our Work</a>
+        <a href="#about-us">About Us</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the DATA1 Group Page</h2>
+            <p>Explore our projects and the work we've done.</p>
+        </section>
+
+        <section id="our-work" class="our-work">
+            <h2>Our Work</h2>
+            <p>Below is a list of our homework and projects:</p>
+            <ul class="homework-list">
+                <li>Homework 1: <a href="homework1.html">Link to Homework 1</a></li>
+                <li>Homework 2: <a href="homework2.html">Link to Homework 2</a></li>
+                <li>Project: <a href="project.html">Link to Final Project</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>DATA1 Group &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
