@@ -125,14 +125,18 @@
 
             <div class="code">
                 <pre>
-def odd_even_dict(length):
-    odd_even_dict = {}  # Create an empty dictionary
-    for num in range(length):
-        if num % 2 == 0:
-            odd_even_dict[num] = "even"
+import numpy as np
+
+def evenorodd(number):
+    newdict = {}
+    for i in np.arange(number):
+        if i%2:
+            newdict[i] = 'odd'
         else:
-            odd_even_dict[num] = "odd"
-    return odd_even_dict
+            newdict[i] = 'even'
+    return newdict
+
+evenorodd(4)
                 </pre>
             </div>
 
@@ -151,14 +155,28 @@ def odd_even_dict(length):
 
             <div class="code">
                 <pre>
-a = 5
-b = 1.5
-c = a + b
-d = a - b
-e = a / b
+first = 5
+second = 3.6
 
-tup = (a, b, c, d, e)
+sum = first + second
+difference = first - second
+division = first / second
+
+tup = (first, second, sum, difference, division)
+
 print(tup)
+"""
+with the first print function I get to see the numbers and with the second one I am able to see the type of the variable.
+"""
+print(type(tup))
+
+try:
+    tup[0] = 10
+except TypeError as e:
+    print("Error:", e)
+"""
+checks the immutability of tuple, shows that when tuple is created its elements cannot be changed
+"""
                 </pre>
             </div>
 
@@ -237,3 +255,98 @@ print(is_prime(5))  # Test the function
 
 </body>
 </html>
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Information</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Puppy</h1>
+    <p>A puppy is a juvenile dog. Some puppies can weigh 1–1.5 kg (2.2–3.3 lb), while larger ones can weigh over 7 kg (15 lb). All puppies display primary altriciality and healthy puppies grow quickly after birth. A puppy's coat color may change as the puppy grows older, as is commonly seen in breeds such as the Yorkshire Terrier. Puppy refers specifically to young dogs,[1] while pup may be used for other animals such as wolves, seals, giraffes, guinea pigs, rats or sharks.[2]</p>
+
+    <h2>Prenatal development</h2>
+    <p>Dogs go through prenatal development before they are born, just like all animals do. The germinal stage, the embryonic stage, and the fetal stage are the three phases that make up this development.
+
+The first stage of prenatal growth in dogs is known as the germinal stage, which starts at fertilization and lasts for about two weeks. The fertilized egg, also known as the zygote, travels through the fallopian tube to the uterus during this period while undergoing rapid cell division. The placenta, which will feed the growing puppy, is formed once the zygote enters the uterus and settles in the uterine wall.[3]
+
+The embryonic period lasts from about day 14 of pregnancy until day 28 or so. With the growth of important organs and body systems, the embryo starts to take on a more recognizable shape at this stage. This involves the development of the digestive system, brain, heart, and lungs. An ultrasound can show the embryo at this time, which is about the size of a grape.[4]
+
+Around day 28 is when the fetal period starts, and it lasts until day 63, when the puppy is born. The puppy's organs and systems continue to develop and refine during this period of growth and development. It also involves the ability to control its own body temperature as well as the maturation of the senses, such as hearing and sight. The puppy is completely developed and prepared for birth by the time the fetal period is over.[5]</p>
+
+    <h2>Development</h2>
+    <p>Puppies are born after an average of 63 days of gestation, emerging in an amnion that is bitten off and eaten by the mother dog.[6] Puppies begin to nurse almost immediately. If the litter exceeds six puppies, particularly if one or more are obvious runts, human intervention in hand-feeding the stronger puppies is necessary to ensure that the runts get proper nourishment and attention from the mother. As they reach one month of age, puppies are gradually weaned and begin to eat solid food. The mother may regurgitate partially digested food for the puppies or might let them eat some of her solid food.[7] The mother usually refuses to nurse at this stage, though she might let them occasionally nurse for comfort.
+
+At first, puppies spend the large majority of their time sleeping and the rest feeding. They instinctively pile together into a heap, and become distressed if separated from physical contact with their littermates by even a short distance.[8]
+
+Puppies are born with a fully functional sense of smell. They are unable to open their eyes. During their first two weeks, a puppy's senses all develop rapidly. During this stage the nose is the primary sense organ used by puppies to find their mother's teats, and to locate their littermates, if they become separated by a short distance. Puppies open their eyes about nine to eleven days following birth. At first, their retinas are poorly developed and their vision is poor. Puppies are not able to see as well as adult dogs. In addition, puppies' ears remain sealed until about thirteen to seventeen days after birth, after which they respond more actively to sounds. Between two and four weeks old, puppies usually begin to growl, bite, wag their tails, and bark.[9]
+
+Puppies develop very quickly during their first three months, particularly after their eyes and ears open and they are no longer completely dependent on their mother. Their coordination and strength improve, they spar with their littermates, and begin to explore the world outside the nest. They play wrestling, chase, dominance, and tug-of-war games.</p>
+
+    <h2>Socialization</h2>
+    <p>Puppies are highly social animals and spend most of their waking hours interacting with either their mother or littermates. When puppies are socialized with humans, particularly between the ages of eight and twelve weeks, they develop social skills around people. Those that do not receive adequate socialization during this period may display fearful behavior around humans or other dogs as adults. The optimum period for socialisation is between eight and twelve weeks; professional animal trainers and the American Kennel Club advise puppies should be introduced to "100 People by 12 Weeks" and have encountered a wide and varied selection of people and environments.[10].</p>
+
+    <h2>Docking and declawing</h2>
+    <p>The practice of docking began primarily as a preventive measure for injury among working dogs. Docking is now primarily performed for purely cosmetic reasons, and some breeds traditionally have their tails cropped anywhere from slightly to almost entirely.[11] Many countries now ban cropping and docking for cosmetic purposes, including Australia, parts of Canada, the majority of the European countries (Austria, Greece, Finland, Netherlands, Italy, the Czech Republic, Turkey, Poland, Slovakia, England, Scotland, Slovenia, Ireland, Norway and Sweden), while others, such as the United States, permit it. As of 2008, the practice is opposed by the American Veterinary Medical Association.[12] Some breeders also prefer to declaw the dogs to prevent future injuries caused by scratching, or in the case of dewclaws, ingrown and ripped-off nails. Docking and declawing procedures are usually performed within the first few days after birth, by a veterinarian, or by an experienced breeder.</p>
+
+    <h2>Gallery</h2>
+    <ul>
+        <li>Australian Cattle Dog puppy</li>
+        <li>A mongrel puppy</li>
+        <li>West Highland White Terrier puppies</li>
+        <li>St. Bernard puppy</li>
+        <li>Cavapoo puppy</li>
+        <li>Bloodhound puppy</li>
+        <li>Chihuahua puppy</li>
+        <li>Jack Russell Terrier puppy</li>
+        <li>Puggle puppy</li>
+        <li>Newborn Basenji puppies</li>
+        <li>German Spitz puppy</li>
+        <li>A little mongrel puppy on the shore, on Halong Bay</li>
+        <li>Basenji puppyy</li>
+        <li>Two Shih Tzu puppies</li>
+        <li>President Lyndon B. Johnson with a basket of puppies in 1966y</li>
+    </ul>
+ <h2>References</h2>
+    <li>1. "Puppy". Merriam-Webster. Retrieved April 30, 2018.<li>
+    <li>2."Pup". Merriam-Webster. Retrieved April 30, 2018.<li>
+    <li>3.Pretzer, S. D. (2008-08-01). "Canine embryonic and fetal development: A review". Theriogenology. Proceedings of the Annual Conference of the Society for Theriogenology. 70 (3): 300–303. doi:10.1016/j.theriogenology.2008.04.029. ISSN 0093-691X.<li>
+    <li>4.Themes, U. F. O. (2016-07-18). "Prenatal Development". Veterian Key. Retrieved 2023-02-20.<li>
+    <li>5.Pretzer, S. D. (2008-08-01). "Canine embryonic and fetal development: A review". Theriogenology. Proceedings of the Annual Conference of the Society for Theriogenology. 70 (3): 300–303. doi:10.1016/j.theriogenology.2008.04.029. ISSN 0093-691X.<li>
+    <li>6.Whitehead, Sarah. Dog: The complete guide, 1999, page 158<li>
+    <li>7.Coren, Stanley. Why Does My Dog Act That Way?: A Complete Guide to Your Dog's Personality, 2006, page 44<li>
+    <li>8.Larkin, Peter. The ultimate encyclopedia of dogs, dog breeds & dog care, 2006, page 53<li>
+    <li>9.White, Linda. First Steps with Puppies and Kittens: A Practice-Team Approach to Behavior, 2009, page 54<li>
+    <li>10.Paddock, Arliss. "The Importance of Puppy Socialization". American Kennel Club. Archived from the original on 2 February 2014. Retrieved 28 January 2014.<li>
+    <li>11.Serpell, James A. Companion Animals And Us: Exploring the Relationships Between People and Pets, 2000, page 307<li>
+    <li>12.AVMA.org, AVMA opposes cosmetic ear cropping, tail docking of dogs - December 15, 2008<li>
+ <h2>Further reading</h2>
+    <li>Cunliffe, Juliette (2004). The Encyclopedia of Dog Breeds. Parragon Publishing. ISBN 0-7525-8276-3.<li>
+    <li>Fogle, Bruce (2000). The New Encyclopedia of the Dog. Doring Kindersley (DK). ISBN 0-7894-6130-7.<li>
+    <li>Mehus-Roe, Kristin, ed. (2005). Dog Bible. BowTie. ISBN 1-931993-34-3.<li>
+ <h2>External links</h2>
+    <li>Great breeds for First-Time Dog Owners from the AKC<li>
+    <li>Legislation and rules - Be your dogs best friend and a good neighbor from the AKC<li>
+
+   
+</body>
+</html>
+
+
